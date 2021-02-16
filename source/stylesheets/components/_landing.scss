@@ -1,0 +1,277 @@
+h2{
+  font-family: $font-family-sans;
+  font-weight: 500;
+  font-size: 36px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 42px;
+  padding-bottom: 36px;
+}
+h3{
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+.landing {
+  padding-top: 120px;
+  h1 {
+    font-family: $font-family-sans;
+    color: #060a24;
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    .strike{
+      color: #060a24;
+      text-decoration: line-through;
+    }
+  }
+  p {
+    font-family: $font-family-mono;
+    font-weight: 200;
+    font-size: 16px;
+    padding-bottom: 36px;
+  }
+  span {
+    color: $primary;
+  }
+}
+
+.episodes {
+  padding-top: 75px;
+   position: relative;
+    z-index: 2;
+  h2 {
+    margin-left: 200px;
+    color: #ffffff;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    .podcast{
+      iframe{
+        margin-bottom: 11px;
+        line-height: 0;
+        width: 587px ;
+        height: 232px;
+      }
+    }
+  }
+}
+
+.backgroud {
+  position: relative;
+  width: 100%;
+  padding-bottom: 120px;
+  &::after {
+    display: block;
+    position: absolute;
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transform: skew(0, -6deg);
+  }
+}
+
+.about {
+  img {
+    position: relative;
+    z-index: 2;
+    margin-top: -80px;
+    height: 519px;
+    width: auto;
+  }
+  p {
+    font-family: $font-family-mono;
+    font-size: 14px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding-bottom: 16px;
+  }
+}
+
+.invites {
+  padding-bottom: 16px;
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      width: 480px;
+      height: 364px;
+    }
+  }
+}
+
+.thems{
+  padding-bottom: 60px;
+  .list{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .description{
+      justify-content: space-around;
+      img{
+        height: 104px;
+        width: 104px;
+      }
+      h3{
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.contact{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  h2{
+    padding-top: 40px;
+    color: #FFFFFF;
+  }
+}
+
+footer{
+  display: inline-block;
+  height: 75px;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: white;
+  justify-content: space-between;
+  padding-top: 36px;
+  h4{
+    margin: 0 100px;
+  }
+  .icons{
+    margin: 0 100px;
+    i{
+      font-size: 18px;
+      color: black;
+      padding:0 10px;
+    }
+  }
+}
+
+//Custom
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .landing {
+    padding-top: 20px;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .episodes {
+    padding-top: 50px;
+    h2 {
+      padding-bottom: 20px;
+      margin-bottom: 21px;
+      margin-left: 15px;
+    }
+    .list{
+      margin-top: 100px;
+      .podcast{
+        iframe{
+          margin-top: -80px;
+          line-height: 0;
+          width: 298px ;
+          height: 300px;
+        }
+      }
+    }
+  }
+  .backgroud {
+    margin-top: 24px;
+    width: 100%;
+  }
+  .invites {
+    h2{
+     padding-bottom: 16px;
+    }
+    .gallery img {
+      width: 320px;
+      height: 243px;
+    }
+  }
+  .thems{
+    padding-bottom: 0px;
+    .list{
+      flex-direction: column;
+      align-items: center;
+      .description{
+        padding-bottom: 84px;
+          h3{
+          text-align: center;
+        }
+      }
+    }
+  }
+  .contact{
+      h2{
+        padding-top: 30px;
+      }
+      button{
+        font-size: 16px;
+      }
+  }
+  footer{
+    display: block;
+    padding: 10px 0;
+    .icons{
+      padding: 16px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      padding-left: 200px;
+    }
+    .text {
+      padding-left: 63px;
+      padding-right: 200px;
+    }
+  }
+  .container {
+    width: 750px;
+  }
+  .backgroud {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

@@ -1,5 +1,49 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,600;1,400;1,500&display=swap");
 
 // Variables
 @import "variables";
+@import "./components/navbar";
+@import "./components/landing";
+
+//Reset
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: $font-family-sans;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+  color: #060A24;
+}
+
+.button {
+  font-family: $font-family-mono;
+  font-weight: bold;
+  font-size: 16px;
+  background: $secundary;
+  padding: 15px 113px;
+
+}
+
+.button:hover {
+  background: $primary;
+  color: white;
+  background-image: linear-gradient(to left, #0000fe, #00f0b8);
+  text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+  .button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}

@@ -2,7 +2,8 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
+$font-family-sans: "IBM Plex Sans", sans-serif;
+$font-family-mono: 'IBM Plex Mono', monospace;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 $enable-responsive-font-sizes: true;
@@ -20,3 +21,7 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
+//Custom
+
+$primary: #0000ec;
+$secundary: #00f3bb;
